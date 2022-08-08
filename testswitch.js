@@ -33,7 +33,8 @@ class Member {
       } 
     
     onlyShowMembName(){
-         console.table([Member.name],["name"]);
+        const newList = this.memberOfXYZ.map(member=> member.name)
+        console.table(newList);
 
     }
 
@@ -53,7 +54,8 @@ class Member {
 
     selectedMember(){
         this.memberOfXYZ
-       // console.table(this.memberOfXYZ(name))
+        const newList = this.memberOfXYZ.map(member=> member.name)
+        console.table(newList);
         var inputName = input.question("Please enter index of member: ");
         console.log(this.memberOfXYZ[inputName])
         //if (inputName = this.memberOfXYZ[name])
